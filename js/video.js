@@ -6,6 +6,7 @@ window.addEventListener("load", function() {
 
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
+	document.querySelector("#volume").innerHTML=volumeSlider.value + "%";
 	video.play();
 });
 
@@ -20,7 +21,7 @@ document.querySelector("#slower").addEventListener("click", function() {
 });
 
 document.querySelector("#faster").addEventListener("click", function() {
-	video.playbackRate = video.playbackRate * 1.25;
+	video.playbackRate = video.playbackRate * 1.1;
 	console.log("Speed is " + video.playbackRate);
 });
 
