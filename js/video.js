@@ -27,8 +27,8 @@ document.querySelector("#faster").addEventListener("click", function() {
 document.querySelector("#skip").addEventListener("click", function() {
 	video.currentTime = video.currentTime + 5;
 	if (video.ended) {
-		video.load();
 		video.play();
+		video.load();
 	}
 	console.log("Current location is " + video.currentTime);
 });
